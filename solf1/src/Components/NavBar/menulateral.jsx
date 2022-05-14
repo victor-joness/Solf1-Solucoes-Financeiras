@@ -30,7 +30,7 @@ const Menulateral = () => {
     }
 
     const Naocartões = () => {
-        navigate(`/Naocartões`);
+        navigate(`/Naocartoes`);
     }
 
     const Naoadmin = () => {
