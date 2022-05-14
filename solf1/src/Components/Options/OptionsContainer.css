@@ -1,0 +1,87 @@
+:root{
+    --verde: #40B189;
+    --preto: #2B2B43;
+    --grey: #83859C;
+    --white-background: #EDEEF2;
+}
+
+.OptionsContainer--infos{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 30rem;
+}
+
+.OptionsContainer--infos .OptionsContainer--infos__conta{
+    display: flex;
+    margin-bottom: 1rem;
+    width: 30rem;
+    height: 7rem;
+    border-radius: 1.5rem;
+    border: .2rem solid #000;
+    background: #fff;
+    justify-content: start;
+    cursor: pointer;
+}
+
+.OptionsContainer--infos .OptionsContainer--infos__conta .OptionsContainer--infos__conta__icon{
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+    line-height: 5.3rem;
+    border-radius: 1rem;
+    background: var(--white-background);
+    margin: auto 2rem;
+}
+
+.OptionsContainer--infos .OptionsContainer--infos__conta .OptionsContainer--infos__conta__pessoais{
+    font-size: 1.5rem;
+    margin: auto 0;
+}
+
+.OptionsContainer--infos .OptionsContainer--infos__conta .OptionsContainer--infos__conta__pessoais p:first-child{
+    font-weight: bolder;
+}
+
+.OptionsContainer--infos .OptionsContainer--infos__conta:hover{
+    border: .2rem solid var(--verde);
+}
+
+.OptionsContainer--infos .OptionsContainer--infos__conta .OptionsContainer--infos__conta__icon:hover{
+    background: var(--verde);
+}
+
+@media (max-width:950px){
+    .OptionsContainer--infos{
+        width: 29rem;
+        height: 25rem;
+    }
+
+    .OptionsContainer--infos .OptionsContainer--infos__conta{
+        height: 6rem;
+    }
+}
+
+@media (max-width:750px){
+    .OptionsContainer--infos .OptionsContainer--infos__conta{
+        width: 27rem;
+    }
+}
+
+@media (max-width:670px){
+    .OptionsContainer--infos .OptionsContainer--infos__conta{
+        width: 26rem;
+    }
+}
+
+@media (max-width:600px){
+    .OptionsContainer--infos {
+        margin: 0 auto;
+        width: 26rem;
+        height: 26rem;
+    }
+
+    
+
+    
+}
