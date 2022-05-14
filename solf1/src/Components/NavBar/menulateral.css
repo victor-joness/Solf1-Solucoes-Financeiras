@@ -100,3 +100,21 @@
         margin-left: 1.5rem;
     }
 }
+
+@media (max-width:450px){
+    .container .container-icons .container-icons__primeiro, .container .container-icons .container-icons__segundo, .container .container-icons .container-icons__quarto, .container .container-icons .container-icons__quinto, .container .container-icons .container-icons__terceiro{
+        height: 4.5rem;
+        width: 4.5rem;
+        line-height: 6rem;
+    }
+
+    .container .container-icons .container-icons__terceiro{
+        line-height: 7rem;
+    }
+}
+
+@media (max-width:350px){
+    .container .container-icons{
+        gap: 1rem;
+    }
+}
