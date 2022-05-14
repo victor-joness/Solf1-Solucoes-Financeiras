@@ -28,7 +28,7 @@ const MenulateralNoUser = () => {
     }
 
     const Naocartões = () => {
-        navigate(`/Naocartões`);
+        navigate(`/Naocartoes`);
     }
 
     const Naoadmin = () => {
