@@ -21,7 +21,7 @@ const Menulateral = () => {
     const navigate = useNavigate();
     //se nao tiver logado;
     const NaoUser = () => {
-        navigate(`/Naologin`);
+        navigate(`/login`);
         console.log(logado)
     }
 
