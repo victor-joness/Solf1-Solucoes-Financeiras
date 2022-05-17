@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600;700;800&display=swap');
+
+:root{
+    --preto:#1D1E22;
+    --cinza-navbar: #38393D;
+}
+
+*{
+  font-family: 'Baloo Chettan 2', sans-serif;
+  padding: 0; margin: 0;
+  outline: none; border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+  overflow-x: hidden;
+}
+
