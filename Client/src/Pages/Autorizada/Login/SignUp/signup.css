@@ -95,7 +95,7 @@
     margin-top: 1rem;
 }
 
-.signup-container .signup-container-direita .signup-container-direita-footer__account a{
+.signup-container .signup-container-direita .signup-container-direita-footer__account p{
     color: var(--verde);
     cursor: pointer;
 }
