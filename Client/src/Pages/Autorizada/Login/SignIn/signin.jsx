@@ -65,7 +65,7 @@ const PageLoginSignIn = () => {
                                 type="submit"
                             >SIGN IN</button>
 
-                            <h2 className='signin-container-direita-footer__account'>Você ainda não tem uma conta ? <a onClick={escolheuSignUp}>SIGN UP</a></h2>
+                            <h2 className='signin-container-direita-footer__account'>Você ainda não tem uma conta ? <p onClick={escolheuSignUp}>SIGN UP</p></h2>
                         </Form>
                     </Formik>
                 </div>
