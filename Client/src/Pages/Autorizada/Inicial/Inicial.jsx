@@ -1,7 +1,7 @@
 import React from "react";
 import "./inicial.css";
 import MenulateralNoUser from "../../../Components/NavBar No user/menulateralNoUser";
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 //imports das images
 import grafico from "../../../images/GRAFICOS.png";

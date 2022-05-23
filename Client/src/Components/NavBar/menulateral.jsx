@@ -1,5 +1,5 @@
-import React ,{ useState }from "react";
-import { Link, useNavigate } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from 'react-router-dom';
 import logo from "../../images/LOGO.png";
 //import css
 import "./menulateral.css";
@@ -59,7 +59,7 @@ const Menulateral = () => {
     }
 
 
-    if(logado == 1){
+    if(logado === 1){
         return(
             <div className="container">
             <div className="container-image">
