@@ -90,6 +90,8 @@
 }
 
 .signin-container .signin-container-direita .signin-container-direita-footer__account{
+    display: flex;
+    justify-content: center;
     color: #fff;
     text-align: center;
     margin-top: 1rem;
@@ -98,6 +100,7 @@
 .signin-container .signin-container-direita .signin-container-direita-footer__account p{
     color: var(--verde);
     cursor: pointer;
+    margin-left: 1rem;
 }
 
 @media (max-width:600px){
