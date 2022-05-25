@@ -2,11 +2,14 @@ import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup'
 import { useNavigate } from 'react-router-dom';
+import Axios from "axios";
 
 import "./signin.css";
 import MenulateralNoUser from '../../../../Components/NavBar No user/menulateralNoUser';
 
 const PageLoginSignIn = () => {
+
+
     const navigate = useNavigate();
 
     const escolheuSignUp = () => {
@@ -14,9 +17,14 @@ const PageLoginSignIn = () => {
     }
 
     const handleClickLogin = (values) => {
-        window.alert("enviado");
-        console.log(values);
-    }
+    Axios.post("http://localhost:3001/logindb", {
+      email: values.email,
+      password: values.password,
+    }).then((response) => {
+      alert(response.data.msg)
+      console.log(response);
+    });
+  };
 
     const validationLogin = yup.object().shape({
         email : yup.string().email("insira um email valido").required("Este campo é obrigatório"),
@@ -37,7 +45,7 @@ const PageLoginSignIn = () => {
                                     name="email"
                                     className="form-field"
                                     placeholder="Email Do Usuário"
-                                    autocomplete="off"
+                                    autoComplete="off"
                                 ></Field>
                                 <ErrorMessage
                                     component="span"
@@ -51,7 +59,7 @@ const PageLoginSignIn = () => {
                                     name="password"
                                     className="form-field"
                                     placeholder="Senha Do Usuário"
-                                    autocomplete="off"
+                                    autoComplete="off"
                                 ></Field>
                                 <ErrorMessage
                                     component="span"
