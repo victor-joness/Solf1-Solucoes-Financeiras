@@ -48,7 +48,7 @@ Nesse projeto, fui capaz de:
   -> Validator Front-end (quando logar) 🚧                                                                                                           
 - BackEnd                                                   
   -> banco de dados (MySql)                                       
-  -> Onde vamos hospedar (Heroku, Hostgator ou githupPages)
+  -> Onde vamos hospedar (Heroku, Hostgator ou githupPages)                                                     
   -> Criptografia da senha no banco de dados ✔️;
 
 ## 📝 Ajustes e melhorias
