@@ -57,6 +57,9 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 - [ ] Realizar testes unitários;
 - [ ] Otimização;
+- [ ] Melhorias no Css;
+- [ ] Adição de Funcionalidades voltada pra deficientes;
+- [ ] Modo preto/Branco;
 # 👷 Como rodar
 
 ```bash
