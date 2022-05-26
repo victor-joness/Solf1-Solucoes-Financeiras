@@ -15,7 +15,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Nesse projeto, fui capaz de:
 
-- Trabalhar com estado e componentes
+- Trabalhar com estado, componentes e useContext.
 - Fazer o uso e o estudo das seguintes bibliotecas Axios, Express, Yup, Formik, Cors, Charts.js, bcrypt, nodemon, React-Router-dom;
 - Uso do banco de dados MySql WorkBench
 - Feito alguns CRUDS
