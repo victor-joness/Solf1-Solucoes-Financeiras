@@ -15,7 +15,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Nesse projeto, fui capaz de:
 
-- Trabalhar com estado, componentes e useContext.
+- Trabalhar com estado, componentes;
 - Fazer o uso e o estudo das seguintes bibliotecas Axios, Express, Yup, Formik, Cors, Charts.js, bcrypt, nodemon, React-Router-dom;
 - Uso do banco de dados MySql WorkBench
 - Feito alguns CRUDS
@@ -60,6 +60,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [ ] Melhorias no Css;
 - [ ] Adição de Funcionalidades voltada pra deficientes;
 - [ ] Modo preto/Branco;
+- [ ] Mudar as variaveis globais para useContext;
 # 👷 Como rodar
 
 ```bash
