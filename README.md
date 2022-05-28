@@ -25,7 +25,7 @@ Nesse projeto, fui capaz de:
   -> talvez fazer uma pagina inicial quando tiver logado;                                                           
 - Página Login / SignUp                                                                   
   -> Login Funcionando ✔️                                                                  
-  -> Logout Funcionando 🚧                                                  
+  -> Logout Funcionando ✔️                                                 
   -> SignUp Funcionando ✔️                                                             
 - Página de DashBoard
   -> Modificação dos dados do Usuario 🚧                                             
