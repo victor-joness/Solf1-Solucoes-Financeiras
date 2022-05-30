@@ -76,6 +76,29 @@
     border: .1rem solid #19802a;
 }
 
+.container .container-user{
+    text-align: center;
+}
+
+.container .container-avatar{
+    margin-bottom: 1.5rem;
+}
+
+.container .container-user .container-exit{
+    line-height: 6.4rem;
+    padding-left: .3rem;
+    width: 5rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    height: 5rem;
+    background: var(--cinza-navbar);
+    border-radius: 50%;
+}
+
+.container .container-user .container-exit:hover{
+    border: .1rem solid #19802a;
+}
+
 @media (max-width:600px){
     .container{
         background: var(--preto);
