@@ -22,7 +22,7 @@ Nesse projeto, fui capaz de:
 
 ## :memo: Funcionalidades: 
 - Página Inicial ✔️  
-  -> talvez fazer uma pagina inicial quando tiver logado;                                                           
+  -> talvez fazer uma pagina inicial quando tiver logado✔️                                                           
 - Página Login / SignUp                                                                   
   -> Login Funcionando ✔️                                                                  
   -> Logout Funcionando ✔️                                                 
@@ -34,9 +34,9 @@ Nesse projeto, fui capaz de:
 - Página de Cartões   
   -> Adicionar um cartão sem quebrar a responsividade 🚧                                                                                         
 - Página de Admin 
-  -> Fazer a pagina com os graficos quando um admin logar;                                                  
+  -> Fazer a pagina com os graficos quando um admin logar🚧                                                  
 - Responsive ✔️                                                                       
-- [Projeto Figma ✔️](https://www.figma.com/file/yi3Ul79yZayWMzAVaoalOF/Template-ufc?node-id=0%3A1);                                                                   
+- [Projeto Figma ✔️](https://www.figma.com/file/yi3Ul79yZayWMzAVaoalOF/Template-ufc?node-id=0%3A1)                                                                   
 - Modals (em construção)                                                                                             
   ->Modal for cookies 🚧                                                                                              
   ->Modal for satisfaction 🚧                                                                                                                                         
