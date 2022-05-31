@@ -1,0 +1,107 @@
+:root{
+    --preto:#1D1E22;
+    --cinza-navbar: #38393D;
+    --verde: #40B189;
+}
+
+.admin--container{
+    display: flex;
+    background: var(--preto);
+}
+
+.admin--container .admin--container__direita{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.admin--container .admin--container__direita .admin--container--direita__usuario{
+    display: flex;
+    line-height: 5rem;
+    color: #fff;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.admin--container .admin--container__direita .admin--container--direita__mid{
+    display: flex;
+    flex-direction: column;
+    width: 120rem;
+    height: 40rem;
+    background: var(--cinza-navbar);
+    border-radius: 3rem;
+    margin-top: 2rem;
+}
+
+.admin--container .admin--container__direita .admin--container--direita__mid h1{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.admin--container .admin--container__direita .admin--container--direita__mid .admin--container--direita--mid__superior{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.admin--container .admin--container__direita .admin--container--direita__mid .admin--container--direita--mid--superior{
+    display: flex;
+    background: #fff;
+    width: 26.5rem;
+    height: 18rem;
+    border-radius: .5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.admin--container .admin--container__direita .admin--container--direita__mid .admin--container--direita--mid--superior h1{
+    color: #000;
+}
+
+.admin--container .admin--container__direita .admin--container--direita__mid .admin--container--direita--mid__inferior{
+    display: flex;
+    margin-top: 1rem;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.linha{
+    display: flex;
+    background: #fff;
+    width: 70rem;
+    height: 15rem;
+    border-radius: .5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.barra{
+    display: flex;
+    background: #fff;
+    width: 40rem;
+    height: 15rem;
+    border-radius: .5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.admin--container .admin--container__direita .admin--container--direita__mid .admin--container--direita--mid__inferior h1{
+    color: #000;
+}
+
+.admin--container--direita__footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.admin--container--direita__footer span{
+    color: var(--verde);
+} 
