@@ -1,0 +1,176 @@
+:root{
+    --preto:#1D1E22;
+    --cinza-navbar: #38393D;
+    --verde: #40B189;
+}
+
+.cartoes--Container{
+    display: flex;
+    background: var(--preto);
+}
+
+.cartoes--Container .cartoes--Container__direita{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 2rem auto;
+}
+
+.cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__usuario{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+}
+
+.cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__usuario h1{
+    margin-left: 1rem;
+    line-height: 5rem;
+}
+
+.cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__cards{
+    width: 80rem;
+    height: 15rem;
+    background: var(--cinza-navbar);
+    color: #fff;
+    border-radius: 3rem;
+    text-align: center;
+}
+
+.cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__cards__cruds{
+    width: 80rem;
+    height: 25rem;
+    background: var(--cinza-navbar);
+    color: #fff;
+    border-radius: 3rem;
+    text-align: center;
+}
+
+.cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__footer{
+    display: flex;
+    justify-content: center; 
+    color: #fff;
+    font-size: 1.7rem;  
+}
+
+.cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__footer span{
+    color: var(--verde);
+}
+
+@media(max-width:960px){
+    .cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__cards{
+        width: 70rem;
+    }
+    
+    .cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__cards__cruds{
+        width: 70rem;
+    }
+}
+
+@media(max-width:830px){
+    .cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__cards{
+        width: 60rem;
+    }
+    
+    .cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__cards__cruds{
+        width: 60rem;
+    }
+}
+
+@media(max-width:730px){
+    .cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__cards{
+        width: 45rem;
+    }
+    
+    .cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__cards__cruds{
+        width: 45rem;
+    }
+
+    .cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__footer{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:600px){
+    .cartoes--Container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__cards{
+        width: 48rem;
+        height: 30rem;
+    }
+    
+    .cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__cards__cruds{
+        width: 48rem;
+        height: 30rem;
+    }
+
+    .cartoes--Container--direita__usuario h1{
+        font-size: 2.5rem;
+    }
+
+    .cartoes--Container--direita__usuario img{
+        display: none;
+    }
+}
+
+@media(max-width:520px){
+    .cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__cards{
+        width: 44rem;
+    }
+    
+    .cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__cards__cruds{
+        width: 44rem;
+    }
+}
+
+@media(max-width:480px){
+    .cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__cards{
+        width: 40rem;
+    }
+    
+    .cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__cards__cruds{
+        width: 40rem;
+    }
+}
+
+@media(max-width:440px){
+    .cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__cards{
+        width: 36rem;
+    }
+    
+    .cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__cards__cruds{
+        width: 36rem;
+    }
+}
+
+
+@media(max-width:400px){
+    .cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__cards{
+        width: 32rem;
+        margin: 0 auto;
+    }
+    
+    .cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__cards__cruds{
+        width: 32rem;
+        margin: 0 auto;
+    }
+
+    .cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__footer{
+        font-size: 1.2rem;
+    }
+}
+
+
+@media(max-width:360px){
+    .cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__cards{
+        width: 28rem;
+        margin: 0 auto;
+    }
+    
+    .cartoes--Container .cartoes--Container__direita .cartoes--Container--direita__cards__cruds{
+        width: 28rem;
+        margin: 0 auto;
+    }
+}
