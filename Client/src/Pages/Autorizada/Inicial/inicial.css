@@ -180,19 +180,64 @@
 
 @media (max-width:430px){
     .container--pagina--inicial .container-direita .infos-mid{
-        margin-left: 6rem;
-        margin-right: 6rem;
-    }
-}
-
-@media (max-width:430px){
-    .container--pagina--inicial .container-direita .infos-mid{
         margin-left: 4rem;
         margin-right: 4rem;
     }
+
+    .container--pagina--inicial .container-direita .infos-top .infos-top__esquerda{
+        width: 35rem;
+        font-size: 1.3rem;
+        height: 18rem;
+    }
+
+    .container--pagina--inicial .container-direita .infos-top .infos-top__esquerda h1{
+        margin: auto 2rem;
+    }
+
+    .container--pagina--inicial .container-direita .infos-top .infos-top__direita{
+        height: 18rem;
+        width: 35rem;
+    }
+
+    .container--pagina--inicial .container-direita .infos-mid .infos-mid__esquerda{
+        margin: auto 2rem;
+    }
 }
 
-@media (max-width:343px){
+@media (max-width:400px){
+    .container--pagina--inicial .container-direita .infos-bot-footer{
+        font-size: 1.3rem;
+    }
+
+    .container--pagina--inicial .container-direita .infos-top .infos-top__esquerda{
+        width: 33rem;
+        padding-top: 1.5rem;
+    }
+
+    .container--pagina--inicial .container-direita .infos-top .infos-top__direita{
+        width: 33rem;
+    }
+}
+
+@media (max-width:360px){
+    .container--pagina--inicial .container-direita .infos-top .infos-top__esquerda{
+        width: 28rem;
+        padding-top: 1rem;
+    }
+
+    .container--pagina--inicial .container-direita .infos-top .infos-top__direita{
+        width: 28rem;
+    }
+
+    .container--pagina--inicial .container-direita .infos-mid .infos-mid__direita{
+        width: 23rem;
+        height: 4rem;
+        line-height: 4rem;
+    }
+}
+
+
+@media (max-width:350px){
     .container--pagina--inicial .container-direita .infos-top .infos-top__esquerda{
         padding-top: 1rem;
     }
@@ -200,4 +245,11 @@
     .container--pagina--inicial .container-direita .infos-bot-footer{
         text-align: center;
     }
+
+    .container--pagina--inicial .container-direita .infos-mid{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+   
 }
