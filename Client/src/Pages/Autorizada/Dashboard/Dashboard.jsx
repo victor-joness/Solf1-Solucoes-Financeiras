@@ -25,7 +25,7 @@ const PageAutorizadaDashboard = () => {
                 </div>
 
                 <div className="Dashboard--Container--direita__footer">
-                    <p>Criado por <span>Victor Mesquita</span> & <span>Livian</span></p>
+                    <h2>Criado por <span>Victor Mesquita</span> & <span>Livian</span></h2>
                 </div>
             </div>
         </div>
