@@ -21,8 +21,21 @@ const PageLoginSignIn = () => {
       email: values.email,
       password: values.password,
     }).then((response) => {
-      alert(response.data.msg)
-      console.log(response);
+        alert(response.data.msg);
+        //faço um if do response e se a mensage for boa ele ja atualiza o estado de uma variavel global que sera usada para identificar o usuario
+        if(response.data.admincode === 1){
+            console.log(response);
+            global.variavel = 1;
+            navigate(`/Dashboard`);
+        }else if(response.data.admincode === 2){
+            console.log(response);
+            global.variavel = 2;
+            navigate(`/`);
+        }else{
+            console.log(response);
+            global.variavel = 0
+            navigate(`/`);
+        }
     });
   };
 
