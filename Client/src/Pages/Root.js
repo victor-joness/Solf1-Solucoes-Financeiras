@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
 //import das pages que temos acesso ao login
 import PageAutorizadaInicial from "./Autorizada/Inicial/Inicial";
 import PageAutorizadaAdmin from "./Autorizada/Admin/Admin";
@@ -17,6 +18,7 @@ import PageDashboardOptionsEndereço from "./Autorizada/Dashboard/Options/Endere
 //import das pages dentro de login
 import PageLoginSignIn from "./Autorizada/Login/SignIn/signin";
 import PageLoginSignUp from "./Autorizada/Login/SignUp/signup";
+import PageAutorizadaLogout from "./Autorizada/Login/Logout/Logout";
 
 
 const Root = () => {
@@ -27,6 +29,7 @@ const Root = () => {
                 <Route path="/login" element={<PageAutorizadaLogin/>}/>
                     <Route path="/SignUp" element={<PageLoginSignUp/>}/>
                     <Route path="/SignIN" element={<PageLoginSignIn/>}/>
+                    <Route path="/Logout" element={<PageAutorizadaLogout/>}/>
                 <Route path="/dashboard" element={<PageAutorizadaDashboard/>}/>
                     <Route path="/dashboard-conta" element={<PageDashboardOptionsConta/>}/>
                     <Route path="/dashboard-despesa" element={<PageDashboardOptionsDespesa/>}/>
