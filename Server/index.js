@@ -36,13 +36,12 @@ app.post("/register", (req, res) => {
               if (err) {
                 res.send(err);
               }
-  
-              res.send({ msg: "Usuário cadastrado com sucesso" });
+              res.send({ msg: "Usuário cadastrado com sucesso", admincode: 1});
             }
           );
         });
       } else {
-        res.send({ msg: "Email já cadastrado" });
+        res.send({ msg: "Email já cadastrado", admincode: 0});
       }
     });
   });
@@ -61,16 +60,16 @@ app.post("/register", (req, res) => {
             res.send(error);
           }
           if(email == "admin@gmail.com"){
-            res.send({ msg: "admin logado", admincode: 5});
+            res.send({ msg: "admin logado!", admincode: 2});
           }
           if (response) {
-            res.send({ msg: "Usuário logado" });
+            res.send({ msg: "Usuário logado!", admincode: 1});
           } else {
-            res.send({ msg: "Senha incorreta" });
+            res.send({ msg: "Senha incorreta!", admincode: 0});
           }
         });
       } else {
-        res.send({ msg: "Usuário não registrado!" });
+        res.send({ msg: "Usuário não registrado!", admincode: 0});
       }
     });
   });
