@@ -73,6 +73,7 @@ const PageLoginSignIn = () => {
                                     className="form-field"
                                     placeholder="Senha Do Usuário"
                                     autoComplete="off"
+                                    type="password"
                                 ></Field>
                                 <ErrorMessage
                                     component="span"
