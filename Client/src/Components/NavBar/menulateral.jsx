@@ -72,7 +72,6 @@ const Menulateral = () => {
         navigate(`/`);
     }
 
-
     if(logado === 1){
         return(
             <div className="container">
@@ -103,7 +102,7 @@ const Menulateral = () => {
             </div>
 
             <div className="container-user">
-                <div className="container-avatar"><img src={avatar} alt="icon avatar navbar" /></div>
+                <div className="container-avatar"><img src={avatar}  alt="icon avatar navbar" /></div>
                 <div className="container-exit" onClick={logout}><img src={exit} alt="icon exit navbar" /></div>
             </div>
         </div>
