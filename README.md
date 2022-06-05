@@ -21,31 +21,27 @@ Nesse projeto, fui capaz de:
 - Feito alguns CRUDS
 
 ## :memo: Funcionalidades: 
-- Página Inicial ✔️  
-  -> talvez fazer uma pagina inicial quando tiver logado✔️                                                           
-- Página Login / SignUp                                                                   
-  -> Login Funcionando ✔️                                                                  
-  -> Logout Funcionando ✔️                                                 
-  -> SignUp Funcionando ✔️                                                             
-- Página de DashBoard
-  -> Modificação dos dados do Usuario 🚧                                             
-  -> Adição de um avatar para o usuario 🚧                                                                   
-  -> CRUD endereço 🚧                                                      
-- Página de Cartões   
-  -> Adicionar um cartão sem quebrar a responsividade 🚧                                                                                         
-- Página de Admin 
-  -> Fazer a pagina com os graficos quando um admin logar🚧                                                  
-- Responsive ✔️                                                                       
-- [Projeto Figma ✔️](https://www.figma.com/file/yi3Ul79yZayWMzAVaoalOF/Template-ufc?node-id=0%3A1)                                                                   
-- Modals (em construção)                                                                                             
-  ->Modal for cookies 🚧                                                                                              
-  ->Modal for satisfaction 🚧                                                                                                                                         
-  ->Modal popup Confirmação de logout 2 buttons ✔️                                                                                                                    
-- library para estudar front end                                                      
-  ->Integrate Charts.js (Gráficos) 🚧                                             
-- Forms Validators 🚧                                                                                            
-  -> Biblioteca para Validações (Yup + formik) ✔️                                                                                                   
-  -> Validator Front-end (quando logar) 🚧                                                                                                           
+- 1 Criação de conta;✔️                           
+- 2 Login;✔️                             
+- 3 Logout;✔️                             
+- 4 Edição de conta; ✔️                            
+- 5 Remoção de conta;✔️                                      
+- 6 CRUD de receita;                                             
+- 7 CRUD de cartão de crédito;                               
+- 8 CRUD de cartão de débito;                                      
+- 9 CRUD de categoria. Uma categoria tem apenas o nome;                                           
+- 10 CRUD de despesa;                                                  
+• Na adição de despesa verificações são obrigatórias. Se a despesa for em cartão de
+crédito, é necessário verificar se a despesa não ultrapassará o valor limite do cartão e se
+não ultrapassou o dia de fechamento da fatura, para inclusão da despesa na fatura do
+mês atual ou do mês seguinte. Caso a despesa seja em cartão de débito, deve-se verificar
+se ainda existe saldo no cartão (receita do mês);                                                  
+• Nas despesas pagas em cartão de crédito, o valor da prestação será incluído automaticamente nas faturas seguintes de acordo com o número de prestações em que a despesa é
+dividida;                                                                                           
+- 11 Nas listagens de cada CRUD deverão existir opções para reordenação ou filtragem dos itens.
+Por exemplo, as despesas listadas podem ser reordenadas pelo valor, data, categoria, etc. Além
+Projeto 2
+disso, as despesas são listráveis pelo mês, categoria, etc;                                                                                                    
 - BackEnd                                                   
   -> banco de dados (MySql)                                       
   -> Onde vamos hospedar (Heroku, Hostgator ou githupPages)                                                     
