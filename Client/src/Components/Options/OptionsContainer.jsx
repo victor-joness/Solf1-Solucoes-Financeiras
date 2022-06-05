@@ -16,7 +16,7 @@ const OptionsContainer = () => {
     } 
 
     const Dashboard_endereço = () =>{
-        navigate(`/Dashboard-endereço`);
+        navigate(`/Dashboard-endereco`);
     } 
 
     const Dashboard_despesa = () =>{
