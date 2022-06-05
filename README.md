@@ -24,7 +24,7 @@ Nesse projeto, fui capaz de:
 - 1 Criação de conta;✔️                           
 - 2 Login;✔️                             
 - 3 Logout;✔️                             
-- 4 Edição de conta;                              
+- 4 Edição de conta; ✔️                            
 - 5 Remoção de conta;✔️                                      
 - 6 CRUD de receita;                                             
 - 7 CRUD de cartão de crédito;                               
