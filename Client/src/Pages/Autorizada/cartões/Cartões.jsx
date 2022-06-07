@@ -8,6 +8,8 @@ import avatar from "../../../images/AVATAR-ICON.png"
 
 
 const PageAutorizadaCartoes = () => {
+    const nome = global.nome;
+
     return(
         <div className="cartoes--Container">
             <Menulateral></Menulateral>
@@ -15,7 +17,7 @@ const PageAutorizadaCartoes = () => {
             <div className="cartoes--Container__direita">
                 <div className="cartoes--Container--direita__usuario">
                     <img src={avatar} alt="avatar do usuario" />
-                    <h1>Nome do Usuário</h1>
+                    <h1>{nome}</h1>
                 </div>
 
                 <div className="cartoes--Container--direita__cards">
