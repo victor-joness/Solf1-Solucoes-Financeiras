@@ -9,6 +9,8 @@ import avatar from "../../../images/AVATAR-ICON.png";
 
 
 const PageAutorizadaDashboard = () => {
+    const nome = global.nome;
+
     return (
         <div className="Dashboard--Container">
             <Menulateral></Menulateral>
@@ -16,7 +18,7 @@ const PageAutorizadaDashboard = () => {
             <div className="Dashboard--Container--direita">
                 <div className="Dashboard--Container--direita__usuario">
                     <img src={avatar} alt="avatar do usuario" />
-                    <h1>Nome do Usuário</h1>
+                    <h1>{nome}</h1>
                 </div>
 
                 <div className="Dashboard--Container--direita__menu">
