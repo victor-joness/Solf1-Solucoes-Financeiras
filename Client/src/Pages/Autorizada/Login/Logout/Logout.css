@@ -55,7 +55,7 @@
     line-height: 5rem;
 }
 
-.Logout-Container-Direita__buttons__options__signin{
+.Logout-Container-Direita__buttons__options__remove{
     width: 40rem;
     height: 5rem;
     display: flex;
@@ -73,7 +73,7 @@
     border: .1rem solid var(--preto);
 }
 
-.Logout-Container-Direita__buttons__options__signin:hover{
+.Logout-Container-Direita__buttons__options__remove:hover{
     border: .1rem solid var(--verde);
 }
 
