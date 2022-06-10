@@ -14,7 +14,7 @@ import PageNaoAutorizadaCartoes from "./NãoAutorizada/Cartões/Cartoes";
 //import das pages options dentro de dashboard
 import PageDashboardOptionsConta from "./Autorizada/Dashboard/Options/Conta/Dashboard-options-conta";
 import PageDashboardOptionsDespesa from "./Autorizada/Dashboard/Options/Despesa/Dashboard-options-despesa";
-import PageDashboardOptionsEndereço from "./Autorizada/Dashboard/Options/Endereço/Dashboard-options-endereço";
+import PageDashboardOptionsEndereco from "./Autorizada/Dashboard/Options/Endereço/Dashboard-options-endereco";
 //import das pages dentro de login
 import PageLoginSignIn from "./Autorizada/Login/SignIn/signin";
 import PageLoginSignUp from "./Autorizada/Login/SignUp/signup";
@@ -33,7 +33,7 @@ const Root = () => {
                 <Route path="/dashboard" element={<PageAutorizadaDashboard/>}/>
                     <Route path="/dashboard-conta" element={<PageDashboardOptionsConta/>}/>
                     <Route path="/dashboard-despesa" element={<PageDashboardOptionsDespesa/>}/>
-                    <Route path="/dashboard-endereço" element={<PageDashboardOptionsEndereço/>}/>
+                    <Route path="/dashboard-endereco" element={<PageDashboardOptionsEndereco/>}/>
                 <Route path="/cartoes" element={<PageAutorizadaCartoes/>}/>
                 <Route path="/admin" element={<PageAutorizadaAdmin/>}/> 
                 
