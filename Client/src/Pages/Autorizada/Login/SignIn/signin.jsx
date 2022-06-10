@@ -25,12 +25,20 @@ const PageLoginSignIn = () => {
         //faço um if do response e se a mensage for boa ele ja atualiza o estado de uma variavel global que sera usada para identificar o usuario
         if(response.data.admincode === 1){
             console.log(response);
+            global.nome = response.data.result[0].nome;
+            global.email = response.data.email;
+            global.celular = response.data.result[0].celular1;
+            global.endereco = response.data.result[0].endereco;
             global.variavel = 1;
             navigate(`/Dashboard`);
         }else if(response.data.admincode === 2){
             console.log(response);
+            global.nome = response.data.result[0].nome;
+            global.email = response.data.email;
+            global.celular = response.data.result[0].celular1;
+            global.endereco = response.data.result[0].endereco;
             global.variavel = 2;
-            navigate(`/`);
+            navigate(`/admin`);
         }else{
             console.log(response);
             global.variavel = 0
