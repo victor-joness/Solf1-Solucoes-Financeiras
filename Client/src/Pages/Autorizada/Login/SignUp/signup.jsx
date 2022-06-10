@@ -19,6 +19,8 @@ const PageLoginSignUp = () => {
     };
 
     const handleClickRegister = (values) => {
+        console.log(values);
+
         Axios.post('http://localhost:3001/register', {
             nome: values.nome,
             email: values.email,
@@ -29,10 +31,18 @@ const PageLoginSignUp = () => {
             if(response.data.admincode === 1){
                 console.log(response);
                 global.variavel = 1;
-                navigate(`/Dashboard`);
+                global.nome = response.data.nome;
+                global.email = response.data.email;
+                global.celular = "Insira um celular";
+                global.endereco = "Insira um endereco";
+                navigate(`/dashboard`);
             }else if(response.data.admincode === 2){
                 console.log(response);
                 global.variavel = 2;
+                global.nome = response.data.nome;
+                global.email = response.data.email;
+                global.celular = "Insira um celular";
+                global.endereco = "Insira um endereco";
                 navigate(`/admin`);
             }else{
                 console.log(response);
