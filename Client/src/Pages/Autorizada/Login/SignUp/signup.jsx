@@ -35,6 +35,7 @@ const PageLoginSignUp = () => {
                 global.email = response.data.email;
                 global.celular = "Insira um celular";
                 global.endereco = "Insira um endereco";
+                global.totalAUX = 0;
                 navigate(`/dashboard`);
             }else if(response.data.admincode === 2){
                 console.log(response);
