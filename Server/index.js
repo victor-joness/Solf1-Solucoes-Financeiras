@@ -120,6 +120,29 @@ app.post("/register", (req, res) => {
     });
   });
 
+  app.post("/despesas", (req, res) => {
+    const email = req.body.email;
+    const total = req.body.total;
+
+    db.query("SELECT * FROM usuarios WHERE email = ?", [email], (err, result) => {
+      if(err){
+        res.send(err);
+      }
+      if(result.length > 0){
+          db.query("UPDATE usuarios SET total = ? WHERE email = ?", [total, email], (err, result) => {
+            if(err){
+              res.send(err);
+            }
+            else{
+              res.send({msg: "mudaça feita com sucesso", total: total});
+            }
+          });
+      }
+    });
+  });
+
+
+
 /* app.get("/", (req, res) => {
     db.query("INSERT INTO usuarios (nome,email, password) VALUES ('victor','victor2@gmail.com', '1234567')", (err, result) => {
         if(err){
