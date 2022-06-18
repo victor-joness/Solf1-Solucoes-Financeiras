@@ -29,7 +29,10 @@ const PageLoginSignIn = () => {
             global.email = response.data.email;
             global.celular = response.data.result[0].celular1;
             global.endereco = response.data.result[0].endereco;
+            global.total = response.data.result[0].total;
+            global.totalAUX = response.data.result[0].total;
             global.variavel = 1;
+            localStorage.clear();
             navigate(`/Dashboard`);
         }else if(response.data.admincode === 2){
             console.log(response);
