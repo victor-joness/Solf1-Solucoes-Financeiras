@@ -4,11 +4,12 @@ import "./UserContainer.css";
 import avatar from "../../images/AVATAR.png";
 
 const UserContainer = () => {
-
+    const total = global.total;
     const nome = global.nome;
     const email = global.email;
     const celular = global.celular;
     const endereco = global.endereco;
+
 
     return (
         <div className="user-infos-container">
@@ -22,7 +23,7 @@ const UserContainer = () => {
                 <p className="user-infos-container__pessoais__Telefone">{celular}</p>
                 <p className="user-infos-container__pessoais__Endereço">{endereco}</p>
 
-                <p className="user-infos-container__pessoais__Saldo">Saldo Disponivel</p>
+                <p className="user-infos-container__pessoais__Saldo">Saldo: {total}</p>
             </div>
         </div>
     )
