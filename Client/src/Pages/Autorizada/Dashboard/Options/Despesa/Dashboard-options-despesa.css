@@ -1,0 +1,14 @@
+:root{
+    --preto:#1D1E22;
+    --cinza-navbar: #38393D;
+    --verde: #40B189;
+}
+
+.despesa--container{
+    display: flex;
+}
+
+.despesa--container--direita{
+    background: var(--cinza-navbar);
+    width: 182rem;
+}
