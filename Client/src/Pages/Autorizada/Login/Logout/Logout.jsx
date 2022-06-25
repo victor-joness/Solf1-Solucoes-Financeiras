@@ -13,7 +13,18 @@ const PageAutorizadaLogout = () => {
     const escolheuLOGOUT = () => {
         window.alert('Usuario Deslogado com sucesso');
         global.variavel = 0;
-        navigate(`/`);
+
+        Axios.post('http://localhost:3001/despesas', {
+            email: global.email,
+            total: global.total
+        }).then((response) => {
+            console.log(response)
+
+            global.email = response.data.email;
+            global.total = response.data.total;
+
+            navigate(`/`);
+        });
     };
 
     const escolheuREMOVE = () => {
