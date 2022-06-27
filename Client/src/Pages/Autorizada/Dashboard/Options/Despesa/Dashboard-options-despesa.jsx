@@ -47,6 +47,7 @@ const PageDashboardOptionsDespesa = () => {
     }, [transactionsList]);
 
     const handleAdd = (transaction) => {
+        global.despesas = [transactionsList];
         const newArrayTransactions = [...transactionsList, transaction];
 
         setTransactionsList(newArrayTransactions);
