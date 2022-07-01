@@ -12,3 +12,14 @@
     background: var(--cinza-navbar);
     width: 182rem;
 }
+
+.cartoes--Container--direita__footer{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.cartoes--Container--direita__footer span{
+    color: #40B189;
+}
