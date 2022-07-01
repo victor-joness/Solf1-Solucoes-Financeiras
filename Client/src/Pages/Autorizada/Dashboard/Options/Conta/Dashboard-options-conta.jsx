@@ -29,7 +29,6 @@ const PageDashboardOptionsConta = () => {
             global.nome = response.data.nome;
             global.email = response.data.email;
             global.celular = response.data.celular;
-            global.endereco = response.data.endereco;
 
             navigate(`/Dashboard`);
         });
