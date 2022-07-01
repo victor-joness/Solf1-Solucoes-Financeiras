@@ -42,6 +42,7 @@ const PageLoginSignUp = () => {
                 global.variavel = 2;
                 global.nome = response.data.nome;
                 global.email = response.data.email;
+                global.total = 0;
                 global.celular = "Insira um celular";
                 global.endereco = "Insira um endereco";
                 navigate(`/admin`);
