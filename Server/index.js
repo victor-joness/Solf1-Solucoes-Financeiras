@@ -141,6 +141,31 @@ app.post("/register", (req, res) => {
     });
   });
 
+  app.post("/endereco", (req, res) => {
+    const email = req.body.email;
+    const cidade = req.body.cidade;
+    const cep = req.body.cep;
+    const numero = req.body.numero;
+
+    const endereco = `cidade: ${cidade} - cep: ${cep} - numero: ${numero}`;
+
+    db.query("SELECT * FROM usuarios WHERE email = ?", [email], (err, result) => {
+      if(err){
+        res.send(err);
+      }
+      if(result.length > 0){
+          db.query("UPDATE usuarios SET endereco = ? WHERE email = ?", [endereco, email], (err, result) => {
+            if(err){
+              res.send(err);
+            }
+            else{
+              res.send({msg: "mudaça feita com sucesso", endereco: endereco});
+            }
+          });
+      }
+    });
+  });
+
 
 
 /* app.get("/", (req, res) => {
