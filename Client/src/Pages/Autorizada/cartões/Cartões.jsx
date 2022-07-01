@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Resume from './components/Resume';
 import Form from './components/Form';
 
+
 import './Cartões.css';
 
 //imports imgs
@@ -15,25 +16,73 @@ const PageAutorizadaCartoes = () => {
         data ? JSON.parse(data) : []
     );
 
-
     const handleAdd = (transaction) => {
         const newArrayTransactions = [...transactionsList, transaction];
 
-        setTransactionsList(newArrayTransactions);
+        if (Number(transaction.ValorAtual) > Number(transaction.Limite)) {
+            alert('valor atual maior que o limite do cartao');
+        } else {
+            setTransactionsList(newArrayTransactions);
 
-        localStorage.setItem(
-            'cartoes',
-            JSON.stringify(newArrayTransactions)
-        );
-        const anterior = global.despesas;
-        console.log(anterior)
+            localStorage.setItem(
+                'cartoes',
+                JSON.stringify(newArrayTransactions)
+            );
+            console.log(transaction);
 
-        const teste = [{id: 200, desc: "teste4", amount: "100", categoria:"teste4", expense: false}];
+            if (transaction.ValorAtual === '') {
+                transaction.ValorAtual = '0';
+            }
 
-        localStorage.setItem(
-            'transactions',
-            JSON.stringify(teste)
-        );
+            if (transaction.expense === false) {
+                global.total =
+                    global.total +
+                    (Number(transaction.Limite) -
+                        Number(transaction.ValorAtual));
+            } else {
+                global.total =
+                    global.total +
+                    (Number(transaction.Limite) -
+                        Number(transaction.ValorAtual));
+            }
+
+            const parcial =
+                Number(transaction.Limite) - Number(transaction.ValorAtual);
+
+            let parcialArray;
+
+            if (transaction.expense === false) {
+                parcialArray = [
+                    {
+                        id: transaction.id,
+                        desc: 'Cartao de credito',
+                        amount: parcial,
+                        categoria: transaction.Bandeira,
+                        expense: transaction.expense,
+                    },
+                ];
+            } else {
+                parcialArray = [
+                    {
+                        id: transaction.id,
+                        desc: 'Cartao de debito',
+                        amount: parcial,
+                        categoria: transaction.Bandeira,
+                        expense: false,
+                    },
+                ];
+            }
+
+            const teste = parcialArray;
+
+            const parcialTransactions = localStorage.getItem('transactions');
+
+            //tentando fazer com que nao precise usar o set no local storage para que ele,
+            //nao apague os registros antigos.
+            console.log(parcialTransactions);
+
+            localStorage.setItem('transactions', JSON.stringify(teste));
+        }
     };
 
     return (
