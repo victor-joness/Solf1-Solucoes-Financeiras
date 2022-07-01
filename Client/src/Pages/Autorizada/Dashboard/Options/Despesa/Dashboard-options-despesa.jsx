@@ -18,6 +18,8 @@ const PageDashboardOptionsDespesa = () => {
         data ? JSON.parse(data) : []
     );
 
+    console.log(transactionsList);
+
     const [income, setIncome] = useState(0);
     const [expense, setExpense] = useState(0);
     const [total, setTotal] = useState(0);
