@@ -16,6 +16,8 @@ const PageAutorizadaCartoes = () => {
         data ? JSON.parse(data) : []
     );
 
+    
+
     const handleAdd = (transaction) => {
         const newArrayTransactions = [...transactionsList, transaction];
 
@@ -52,36 +54,35 @@ const PageAutorizadaCartoes = () => {
             let parcialArray;
 
             if (transaction.expense === false) {
-                parcialArray = [
-                    {
+                parcialArray =
+                    [{
                         id: transaction.id,
                         desc: 'Cartao de credito',
                         amount: parcial,
                         categoria: transaction.Bandeira,
                         expense: transaction.expense,
-                    },
-                ];
+                    }]
             } else {
-                parcialArray = [
-                    {
+                parcialArray = 
+                    [{
                         id: transaction.id,
                         desc: 'Cartao de debito',
                         amount: parcial,
                         categoria: transaction.Bandeira,
                         expense: false,
-                    },
-                ];
+                    }]
             }
 
             const teste = parcialArray;
+            console.log("cartao teste do local storage");
 
-            const parcialTransactions = localStorage.getItem('transactions');
+            localStorage.setItem('transactions', JSON.stringify(teste));
+
+            //const parcialTransactions = localStorage.getItem('transactions');
 
             //tentando fazer com que nao precise usar o set no local storage para que ele,
             //nao apague os registros antigos.
-            console.log(parcialTransactions);
 
-            localStorage.setItem('transactions', JSON.stringify(teste));
         }
     };
 
