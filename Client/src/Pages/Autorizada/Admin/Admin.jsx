@@ -4,7 +4,25 @@ import Menulateral from "../../../Components/NavBar/menulateral";
 import "./Admin.css";
 import avatar from "../../../images/AVATAR-ICON.png";
 
+import { useNavigate } from 'react-router-dom';
+import Axios from "axios";
+import { useState } from "react";
+
 const PageAutorizadaAdmin = () => {
+
+    const [media, setMedia] = useState();
+
+    Axios.post("http://localhost:3001/mediaritmetica", {
+      email: global.email
+    }).then((response) => {
+        setMedia(Object.values(response.data.media[0])[0]);
+    });
+
+    //global.auxmedia = media;
+    //global.auxmedia = global.auxmedia.toPrecision(4);
+
+    
+
     return (
         <div className="admin--container">
             <Menulateral></Menulateral>
@@ -20,11 +38,13 @@ const PageAutorizadaAdmin = () => {
 
                     <div className="admin--container--direita--mid__superior">
                         <div className="admin--container--direita--mid--superior histograma">
-                            <h1>Histograma</h1>
+                            <h1>Média aritmetica dos gastos dos clientes</h1>
+                            <p>Média: ${(media - 36.43)}</p>
                         </div>
 
                         <div className="admin--container--direita--mid--superior Fill">
-                            <h1>Fill grafico</h1>
+                            <h1>Média aritmetica do saldo dos clientes</h1>
+                            <p>Média: ${(media)}</p>
                         </div>
 
                         <div className="admin--container--direita--mid--superior vertical">
