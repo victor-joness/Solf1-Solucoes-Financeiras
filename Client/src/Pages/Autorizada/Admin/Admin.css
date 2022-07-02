@@ -105,3 +105,21 @@
 .admin--container--direita__footer span{
     color: var(--verde);
 } 
+
+.histograma{
+    display: flex;
+    flex-direction: column;
+}
+
+.histograma p{
+    font-size: 2rem;
+}
+
+.Fill{
+    display: flex;
+    flex-direction: column;
+}
+
+.Fill p{
+    font-size: 2rem;
+}
