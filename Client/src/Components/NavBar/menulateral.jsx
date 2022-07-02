@@ -13,6 +13,8 @@ import identidade from "../../images/icons navbar/IDENTIDADE.png";
 import avatar from "../../images/AVATAR-ICON.png"; 
 import exit from "../../images/EXIT.png";
 
+import Axios from 'axios';
+
 const Menulateral = () => {
     //pegar alguma coisa para verificar se ta logado;
     //ex
@@ -66,11 +68,24 @@ const Menulateral = () => {
         console.log(global.variavel)
     }
 
+    
+
     const logout = () => {
+        window.alert('Usuario Deslogado com sucesso');
         global.variavel = 0;
-        window.alert("usuario deslogado com sucesso");
-        navigate(`/`);
-    }
+
+        Axios.post('http://localhost:3001/despesas', {
+            email: global.email,
+            total: global.total
+        }).then((response) => {
+            console.log(response)
+
+            global.email = response.data.email;
+            global.total = response.data.total;
+
+            navigate(`/`);
+        });
+    };
 
     if(logado === 1){
         return(
