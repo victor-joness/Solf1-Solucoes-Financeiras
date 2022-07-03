@@ -8,7 +8,9 @@ export const Container = styled.div`
   background: #40B189;
 `;
 
-export const Header = styled.h1``;
+export const Header = styled.h1`
+  font-size:25px
+`;
 
 export const Title = styled.div`
   padding-top: 20px;
