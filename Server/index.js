@@ -166,6 +166,26 @@ app.post("/register", (req, res) => {
     });
   });
 
+  app.post("/mediaritmetica", (req, res) => {
+    const email = req.body.email;
+
+    db.query("SELECT * FROM usuarios WHERE email = ?", [email], (err, result) => {
+      if(err){
+        res.send(err);
+      }
+      if(result.length > 0){
+          db.query("SELECT AVG(total) as Média FROM usuarios", (err, result) => {
+            if(err){
+              res.send(err);
+            }
+            else{
+              res.send({msg: "mudaça feita com sucesso", media: result});
+            }
+          });
+      }
+    });
+  });
+
 
 
 /* app.get("/", (req, res) => {
