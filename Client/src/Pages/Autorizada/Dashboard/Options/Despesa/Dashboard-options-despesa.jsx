@@ -1,8 +1,5 @@
 import './Dashboard-options-despesa.css';
 
-import Axios from 'axios';
-import { useNavigate } from 'react-router-dom';
-
 import Menulateral from '../../../../../Components/NavBar/menulateral';
 
 import React, { useEffect, useState } from 'react';
