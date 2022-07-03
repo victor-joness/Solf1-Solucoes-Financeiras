@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <C.Container>
       <C.Header>
-        <C.Title>Cadastro de Cartoes do : {nome}</C.Title>
+        <C.Title>Cadastro de Cartoes do {nome}</C.Title>
       </C.Header>
     </C.Container>
   );
