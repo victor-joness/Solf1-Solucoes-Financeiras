@@ -57,7 +57,6 @@ const GridItem = ({ item, onDelete, itens, setItens, handleAdd, transactionsList
       </C.Td>
       <C.Td alignCenter>
           <FaMarker onClick={() => onUpdate(item.id)} />
-
       </C.Td>
     </C.Tr>
   );
