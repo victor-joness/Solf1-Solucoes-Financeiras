@@ -45,6 +45,9 @@ disso, as despesas são listráveis pelo mês, categoria, etc;❌
 - BackEnd                                                   
   -> banco de dados (MySql) ✔️                                                                                         
   -> Criptografia da senha no banco de dados ✔️;
+  
+## 📝 Fotos do projeto                                                                         
+  ->
 
 ## 📝 Ajustes e melhorias
 
