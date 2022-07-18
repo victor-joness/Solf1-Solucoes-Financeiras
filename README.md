@@ -26,25 +26,24 @@ Nesse projeto, fui capaz de:
 - 3 Logout;✔️                             
 - 4 Edição de conta; ✔️                            
 - 5 Remoção de conta;✔️                                      
-- 6 CRUD de receita;                                             
-- 7 CRUD de cartão de crédito;                               
-- 8 CRUD de cartão de débito;                                      
-- 9 CRUD de categoria. Uma categoria tem apenas o nome;                                           
-- 10 CRUD de despesa;                                                  
+- 6 CRUD de receita; ✔️                                            
+- 7 CRUD de cartão de crédito;  ✔️                             
+- 8 CRUD de cartão de débito; ✔️                                     
+- 9 CRUD de categoria. Uma categoria tem apenas o nome; ✔️                                          
+- 10 CRUD de despesa; ✔️                                                
 • Na adição de despesa verificações são obrigatórias. Se a despesa for em cartão de
 crédito, é necessário verificar se a despesa não ultrapassará o valor limite do cartão e se
 não ultrapassou o dia de fechamento da fatura, para inclusão da despesa na fatura do
 mês atual ou do mês seguinte. Caso a despesa seja em cartão de débito, deve-se verificar
 se ainda existe saldo no cartão (receita do mês);                                                  
 • Nas despesas pagas em cartão de crédito, o valor da prestação será incluído automaticamente nas faturas seguintes de acordo com o número de prestações em que a despesa é
-dividida;                                                                                           
+dividida;❌                                                                                         
 - 11 Nas listagens de cada CRUD deverão existir opções para reordenação ou filtragem dos itens.
 Por exemplo, as despesas listadas podem ser reordenadas pelo valor, data, categoria, etc. Além
 Projeto 2
-disso, as despesas são listráveis pelo mês, categoria, etc;                                                                                                    
+disso, as despesas são listráveis pelo mês, categoria, etc;❌                                                                                                 
 - BackEnd                                                   
-  -> banco de dados (MySql)                                       
-  -> Onde vamos hospedar (Heroku, Hostgator ou githupPages)                                                     
+  -> banco de dados (MySql) ✔️                                                                                         
   -> Criptografia da senha no banco de dados ✔️;
 
 ## 📝 Ajustes e melhorias
